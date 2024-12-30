@@ -16,7 +16,7 @@ SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', 'django-insecure-d(ub-p2%joljp#=fxig
 DEBUG = os.getenv('DJANGO_DEBUG', 'True') == 'True'
 
 # ALLOWED_HOSTS for development (localhost)
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 INSTALLED_APPS = [
@@ -67,7 +67,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': os.getenv('DB_NAME', 'u238033420_certificate'),  # Replace with your actual database name
         'USER': os.getenv('DB_USER', 'u238033420_braintech'),    # Replace with your database user
-        'PASSWORD': os.getenv('DB_PASSWORD', 'Braintech@123'),      # Replace with your database password
+        'PASSWORD': os.getenv('DB_PASSWORD', 'Braintech@321'),      # Replace with your database password
         'HOST': os.getenv('DB_HOST', 'mysql.hostinger.com'),      # Hostinger's MySQL server
         'PORT': os.getenv('DB_PORT', '3306'),
     }
