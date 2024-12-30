@@ -178,26 +178,39 @@ TEMPLATES = [
 WSGI_APPLICATION = 'BrainTech_Technology.wsgi.application'
 
 # Database configuration
+# pymysql.install_as_MySQLdb()
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'braintechtechnol_certificate',
+#         'USER': 'braintechtechnol_braintech',  # Fixed extra space issue
+#         'PASSWORD': 'Vghosh@123',
+#         'HOST': 'localhost',  # Or your MySQL server IP
+#         'PORT': '3306',
+#     }
+# #     'default': {
+# #         'ENGINE': 'django.db.backends.mysql',
+# #         'NAME': 'u12345678_certificate',
+# #         'USER': 'u12345678_braintech',
+# #         'PASSWORD': 'Vghosh@123',
+# #         'HOST': 'mysql.hostinger.com',
+# #         'PORT': '3306',
+# #     }
+# # }
+# }
+
 pymysql.install_as_MySQLdb()
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'braintechtechnol_certificate',
-        'USER': 'braintechtechnol_braintech',  # Fixed extra space issue
-        'PASSWORD': 'Vghosh@123',
-        'HOST': 'localhost',  # Or your MySQL server IP
+        'NAME': 'u238033420_certificate',  # Replace with your actual database name
+        'USER': 'u238033420_braintech',    # Replace with your database user
+        'PASSWORD': 'Vghosh@123',        # Replace with your database password
+        'HOST': 'mysql.hostinger.com',   # Hostinger's MySQL server
         'PORT': '3306',
     }
-#     'default': {
-#         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': 'u12345678_certificate',
-#         'USER': 'u12345678_braintech',
-#         'PASSWORD': 'Vghosh@123',
-#         'HOST': 'mysql.hostinger.com',
-#         'PORT': '3306',
-#     }
-# }
 }
 # Password validation
 AUTH_PASSWORD_VALIDATORS = [
