@@ -27,6 +27,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'BrainTech_App',  # Ensure this name matches your app directory
+    'mod.wsgi_server',
 ]
 
 MIDDLEWARE = [
