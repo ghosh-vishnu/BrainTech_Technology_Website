@@ -178,17 +178,17 @@ TEMPLATES = [
 WSGI_APPLICATION = 'BrainTech_Technology.wsgi.application'
 
 # Database configuration
-pymysql.install_as_MySQLdb()
+# pymysql.install_as_MySQLdb()
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'braintechtechnol_certificate',
-        'USER': 'braintechtechnol_braintech',  # Fixed extra space issue
-        'PASSWORD': 'Vghosh@123',
-        'HOST': 'localhost',  # Or your MySQL server IP
-        'PORT': '3306',
-    }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'braintechtechnol_certificate',
+#         'USER': 'braintechtechnol_braintech',  # Fixed extra space issue
+#         'PASSWORD': 'Vghosh@123',
+#         'HOST': 'localhost',  # Or your MySQL server IP
+#         'PORT': '3306',
+#     }
 #     'default': {
 #         'ENGINE': 'django.db.backends.mysql',
 #         'NAME': 'u12345678_certificate',
@@ -198,7 +198,7 @@ DATABASES = {
 #         'PORT': '3306',
 #     }
 # }
-}
+# }
 # Password validation
 AUTH_PASSWORD_VALIDATORS = [
     {
